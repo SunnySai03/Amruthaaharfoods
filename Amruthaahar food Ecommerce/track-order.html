@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Track My Order | Amruth Aahar Foods</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="assets/images/favicon.png">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="assets/css/header.css">
+
+  <style>
+    .track-container {
+      max-width: 600px;
+      margin: 120px auto;
+      padding: 40px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .track-container h1 {
+      color: #4B2E1E;
+      margin-bottom: 12px;
+    }
+
+    .track-container p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .track-container input,
+    .track-container select {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 18px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .track-container button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #C9782A, #e2a25b);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .track-note {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Amruth Aahar Foods">
+      </a>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="knowmore.html">Our Process</a>
+      <a href="products.html">Products</a>
+      <a href="track-order.html">Track My Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="products.html" class="nav-cta">Order Now</a>
+
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="knowmore.html" onclick="closeMenu()">Our Process</a>
+  <a href="products.html" onclick="closeMenu()">Products</a>
+  <a href="track-order.html" onclick="closeMenu()">Track My Order</a>
+  <a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- ===== TRACK ORDER ===== -->
+<main class="track-container">
+  <h1>Track Your Order</h1>
+  <p>Enter your AWB number to track your shipment.</p>
+
+  <input type="text" id="awb" placeholder="Enter AWB / Tracking Number">
+
+  <select id="courier">
+    <option value="">Select Courier Partner</option>
+    <option value="delhivery">Delhivery</option>
+    <option value="ekart">Ekart</option>
+  </select>
+
+  <button onclick="trackOrder()">Track Order</button>
+
+  <div class="track-note">
+    Tracking information is provided by our delivery partners.
+  </div>
+</main>
+
+<!-- Scripts -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/track-order.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+:root {
+  --primary: #C9782A;
+  --secondary: #4B2E1E;
+  --dark: #2B2B2B;
+  --light-bg: #FFFAF5;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(
+      rgba(255,250,245,0.9),
+      rgba(255,250,245,0.9)
+    ),
+    url("../images/hero-bg.jpg") center/cover no-repeat;
+  padding: 120px 20px 100px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--secondary);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 18px auto 30px;
+  font-size: 1.1rem;
+  color: #555;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero .hero-cta {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, var(--primary), #e2a25b);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(201,121,42,0.3);
+  transition: transform 0.3s ease;
+}
+
+.hero .hero-cta:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== SECTION COMMON ===== */
+.section {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.section.alt {
+  background: var(--light-bg);
+}
+
+.section h2 {
+  text-align: center;
+  color: var(--secondary);
+  font-size: 2.3rem;
+  margin-bottom: 14px;
+}
+
+.section p.section-desc {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #555;
+}
+
+/* ===== PROCESS PREVIEW ===== */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.process-step {
+  background: #fff;
+  padding: 28px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-6px);
+}
+
+.process-step h4 {
+  color: var(--secondary);
+  margin-bottom: 8px;
+}
+
+/* ===== WHY US ===== */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.why-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+}
+
+.why-card h4 {
+  color: var(--secondary);
+  margin-bottom: 10px;
+}
+
+/* ===== FINAL CTA ===== */
+.final-cta {
+  background: linear-gradient(135deg, var(--secondary), #6a3f2b);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.final-cta h2 {
+  font-size: 2.4rem;
+  margin-bottom: 14px;
+}
+
+.final-cta a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 32px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}

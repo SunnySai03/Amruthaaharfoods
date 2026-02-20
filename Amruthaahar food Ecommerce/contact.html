@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | Amruth Aahar Foods</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="assets/images/favicon.png">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="assets/css/header.css">
+
+  <style>
+    :root {
+      --primary: #C9782A;
+      --secondary: #4B2E1E;
+      --light-bg: #FFFAF5;
+    }
+
+    .contact-wrapper {
+      max-width: 1100px;
+      margin: 120px auto;
+      padding: 40px 20px;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .contact-header h1 {
+      color: var(--secondary);
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-header p {
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .contact-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .contact-card h3 {
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+
+    .contact-card p {
+      color: #555;
+      margin-bottom: 16px;
+    }
+
+    .contact-card a {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, var(--primary), #e2a25b);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-note {
+      margin-top: 60px;
+      background: var(--light-bg);
+      padding: 40px;
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .contact-note h2 {
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+
+    .contact-note p {
+      color: #555;
+      max-width: 720px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .contact-header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Amruth Aahar Foods">
+      </a>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="knowmore.html">Our Process</a>
+      <a href="products.html">Products</a>
+      <a href="track-order.html">Track My Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="products.html" class="nav-cta">Order Now</a>
+
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="knowmore.html" onclick="closeMenu()">Our Process</a>
+  <a href="products.html" onclick="closeMenu()">Products</a>
+  <a href="track-order.html" onclick="closeMenu()">Track My Order</a>
+  <a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- ===== CONTACT CONTENT ===== -->
+<main class="contact-wrapper">
+
+  <div class="contact-header">
+    <h1>Get in Touch</h1>
+    <p>We’re here to help with orders, support, and partnerships.</p>
+  </div>
+
+  <div class="contact-grid">
+
+  <!-- Order & Support -->
+  <div class="contact-card">
+    <div class="contact-icon">📞</div>
+    <h3>Order & Support</h3>
+    <p>For placing orders, delivery updates, or general support.</p>
+    <a href="https://wa.me/7207252003" target="_blank">Chat on WhatsApp</a>
+  </div>
+
+  <!-- Email -->
+  <div class="contact-card">
+    <div class="contact-icon">✉️</div>
+    <h3>Email Us</h3>
+    <p>Reach us for queries, feedback, or collaborations.</p>
+    <a href="mailto:info@amruthaaharfoods.com">Send Email</a>
+  </div>
+
+  <!-- Business -->
+  <div class="contact-card">
+    <div class="contact-icon">🏢</div>
+    <h3>Business & Distribution</h3>
+    <p>Interested in retail or distribution partnerships?</p>
+    <a href="mailto:business@amruthaaharfoods.com">Contact Business</a>
+  </div>
+
+</div>
+
+  <div class="contact-note">
+    <h2>Transparency Matters</h2>
+    <p>
+      Amruth Aahar Foods is committed to honest practices, clear communication,
+      and quality-first production. Every query is handled with care —
+      because trust is as important as taste.
+    </p>
+  </div>
+
+</main>
+
+<!-- Scripts -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
